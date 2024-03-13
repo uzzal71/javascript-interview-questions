@@ -154,3 +154,18 @@ console.log({ library2 }); // {library2: 'React'}
 ### PROBLEM - 8:
 
 How to calculate performance of a task/operation?
+
+```
+// Know performance of a task
+// We can wrap our task with performance.now()
+
+const startTime = performance.now();
+
+for (let i = 0; i <= 50; i++) {
+  console.log(i);
+}
+
+const endTime = performance.now();
+
+console.log(`loop took ${endTime - startTime} milliseconds to finish`);
+```
