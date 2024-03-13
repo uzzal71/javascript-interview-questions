@@ -169,3 +169,35 @@ const endTime = performance.now();
 
 console.log(`loop took ${endTime - startTime} milliseconds to finish`);
 ```
+
+### PROBLEM - 9:
+
+How can we swap values?
+
+### PROBLEM - 10:
+
+How to copy things from clipboard
+
+### PROBLEM - 11:
+
+Destructuring aliases
+
+### PROBLEM - 12:
+
+Get value as data type
+
+### PROBLEM - 13:
+
+Remove duplicate from array
+
+### PROBLEM - 14:
+
+Compare two arrays by value
+
+### PROBLEM - 15:
+
+Shuffling an array
+
+### PROBLEM - 16:
+
+Using comma operator
