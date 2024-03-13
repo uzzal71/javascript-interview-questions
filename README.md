@@ -68,6 +68,15 @@ console.log(Boolean(1)); // true
 
 How to resize an array?
 
+```
+// Resizing any array
+let animals = ["🐕", "🐒", "🐈", "🐅"];
+
+// We can use arrays length property
+animals.length = 3;
+console.log(animals);
+```
+
 ### PROBLEM - 4:
 
 How to flatten a multidimensional array?
