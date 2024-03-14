@@ -428,3 +428,77 @@ const myFunction = function () {
 
 console.log(myFunction(2, 1, 4, 3));
 ```
+
+### PROBLEM - 25:
+
+Debounce function
+
+index.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deboncing Tutorial</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button type="button" id="button">Click Here</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+```
+
+style.css
+
+```
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+}
+```
+
+script.js
+
+```
+const button = document.getElementById("button");
+
+// debounce handler
+function debounce(fn, delay) {
+  let timeroutId;
+  return function () {
+    if (timeroutId) {
+      clearTimeout(timeroutId);
+    }
+    timeroutId = setTimeout(() => {
+      fn();
+    }, delay);
+  };
+}
+
+button.addEventListener(
+  "click",
+  debounce(function () {
+    console.log("clicked");
+  }, 2000)
+);
+```
