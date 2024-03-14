@@ -397,3 +397,16 @@ const a = "constructor";
 // String constructor arguments pass 01
 console.log(a[a](01)); // "1"
 ```
+
+### PROBLEM - 22:
+
+What will be the output?
+
+```
+console.log(0.1 + 0.2); // 0.3000004
+console.log(0.1 + 0.3); // 0.4
+```
+
+### PROBLEM - 23:
+
+### PROBLEM - 24:
