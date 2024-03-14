@@ -613,3 +613,45 @@ const calculate = memoization(add);
 console.log(calculate(10, 20, 30, 50));
 console.log(calculate(10, 20, 30, 50));
 ```
+
+### 👉 PROBLEM 30:
+
+Understanding Closure, Async-Await, and Scope
+
+```
+async function timer(n) {
+  console.log("Start timer");
+
+  for (var i = 0; i <= n; i++) { // let i = 0;
+    console.log(i);
+  }
+
+  console.log("End timer");
+}
+
+timer(3);
+```
+
+```
+function delay(i) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(i);
+    }, i * 1000);
+  });
+}
+
+async function timer(n) {
+  console.log("Start timer");
+
+  for (var i = 0; i <= n; i++) {
+    const result = await delay(i);
+    console.log(result);
+  }
+
+  console.log("End timer");
+}
+
+timer(3);
+
+```
