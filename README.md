@@ -1,6 +1,6 @@
 # Javascript Jobs Interview Questions
 
-### PROBLEM - 1:
+### 👉 PROBLEM - 1:
 
 How to remove falsy values from an array?
 
@@ -39,7 +39,7 @@ let fruits = miscellaneous.filter(function (element) {
 console.log(fruits);
 ```
 
-### PROBLEM - 2:
+### 👉 PROBLEM - 2:
 
 Convert any value to boolean?
 
@@ -64,7 +64,7 @@ console.log(Boolean(null)); // false
 console.log(Boolean(1)); // true
 ```
 
-### PROBLEM - 3:
+### 👉 PROBLEM - 3:
 
 How to resize an array?
 
@@ -77,7 +77,7 @@ animals.length = 3;
 console.log(animals);
 ```
 
-### PROBLEM - 4:
+### 👉 PROBLEM - 4:
 
 How to flatten a multidimensional array?
 
@@ -95,7 +95,7 @@ let smileys2 = ["🥰", ["😄", "😃", ["🥲", "😑"]], "😉"];
 console.log(smileys2.flat(Infinity));
 ```
 
-### PROBLEM - 4:
+### PROBLEM - 5:
 
 How to use short conditions?
 
@@ -120,7 +120,7 @@ if(captain !== "Mashrafi") {
 captain === "Mashrafi" || console.log("😡");
 ```
 
-### PROBLEM - 6:
+### 👉 PROBLEM - 6:
 
 How to replace all occurrences of a string?
 
@@ -133,7 +133,7 @@ const quote =
 console.log(quote.replace(/framework/g, "library")); // React is a JS library & this library is the most popular front-end library right now
 ```
 
-### PROBLEM - 7:
+### 👉 PROBLEM - 7:
 
 How to log variable with values properly?
 
@@ -151,7 +151,7 @@ console.log({ library1 }); // {library1: 'jQuery'}
 console.log({ library2 }); // {library2: 'React'}
 ```
 
-### PROBLEM - 8:
+### 👉 PROBLEM - 8:
 
 How to calculate performance of a task/operation?
 
@@ -170,7 +170,7 @@ const endTime = performance.now();
 console.log(`loop took ${endTime - startTime} milliseconds to finish`);
 ```
 
-### PROBLEM - 9:
+### 👉 PROBLEM - 9:
 
 How can we swap values?
 
@@ -208,7 +208,7 @@ b = a + (a = b) - b;
 console.log(a, b);
 ```
 
-### PROBLEM - 10:
+### 👉 PROBLEM - 10:
 
 How to copy things from clipboard
 
@@ -240,7 +240,7 @@ function handleClick() {
 }
 ```
 
-### PROBLEM - 11:
+### 👉 PROBLEM - 11:
 
 Destructuring aliases
 
@@ -258,7 +258,7 @@ const { name: languageName, founder: createrName } = language;
 console.log(languageName, createrName);
 ```
 
-### PROBLEM - 12:
+### 👉 PROBLEM - 12:
 
 Get value as data type
 
@@ -279,7 +279,7 @@ const element = document.querySelector("#number").valueAsNumber;
 console.log(element);
 ```
 
-### PROBLEM - 13:
+### 👉 PROBLEM - 13:
 
 Remove duplicate from array
 
@@ -289,7 +289,7 @@ const array = [1, 2, 2, 3, 4, 3, 4, 4, 5];
 console.log([...new Set(array)]);
 ```
 
-### PROBLEM - 14:
+### 👉 PROBLEM - 14:
 
 Compare two arrays by value
 
@@ -301,7 +301,7 @@ const hasSameElements = (a, b) => {
 console.log(hasSameElements([1, 2, 3], [1, 2, 3]));
 ```
 
-### PROBLEM - 15:
+### 👉 PROBLEM - 15:
 
 Shuffling an array
 
@@ -311,7 +311,7 @@ const numbers = [1, 2, 3, 4, 5, 6];
 console.log(numbers.sort((number) => Math.random() - 0.5));
 ```
 
-### PROBLEM - 16:
+### 👉 PROBLEM - 16:
 
 Using comma operator
 
@@ -332,7 +332,7 @@ for (let i = 0, j = 3; i <= 3; i++, j--) {
 }
 ```
 
-### PROBLEM - 17:
+### 👉 PROBLEM - 17:
 
 What will be the output of the below code?
 
@@ -348,7 +348,7 @@ console.log(String([])); // ""
 
 ```
 
-### PROBLEM - 18:
+### 👉 PROBLEM - 18:
 
 What will be the output below code
 
@@ -361,7 +361,7 @@ const string = myFunction`hello `; // passing function arguments for template li
 console.log(string); // Bangladesh
 ```
 
-### PROBLEM - 19:
+### 👉 PROBLEM - 19:
 
 how to make all text contents of a website editable?
 
@@ -388,7 +388,7 @@ let a = {
 a.method(b, 5); // the length is 2
 ```
 
-### PROBLEM - 21:
+### 👉 PROBLEM - 21:
 
 what will be the output of below code?
 
@@ -398,7 +398,7 @@ const a = "constructor";
 console.log(a[a](01)); // "1"
 ```
 
-### PROBLEM - 22:
+### 👉 PROBLEM - 22:
 
 What will be the output?
 
@@ -407,7 +407,7 @@ console.log(0.1 + 0.2); // 0.3000004
 console.log(0.1 + 0.3); // 0.4
 ```
 
-### PROBLEM - 23:
+### 👉 PROBLEM - 23:
 
 what will be the output of below code?
 
@@ -417,7 +417,7 @@ let b = new String("Bangladesh");
 console.dir(b);
 ```
 
-### PROBLEM - 24:
+### 👉 PROBLEM - 24:
 
 make a function that sorts its arguments without using loops
 
@@ -429,7 +429,7 @@ const myFunction = function () {
 console.log(myFunction(2, 1, 4, 3));
 ```
 
-### PROBLEM - 25:
+### 👉 PROBLEM - 25:
 
 Debounce function
 
@@ -502,3 +502,38 @@ button.addEventListener(
   }, 2000)
 );
 ```
+
+### 👉 PROBLEM - 26:
+
+Count duplicate elements in an array
+
+```
+// count duplicate element in an array
+
+// input
+const fruits = ["🍇", "🥭", "🍍", "🍋", "🥭", "🥭", "🍇", "🍍"];
+
+// output {"🍇": 2, "🥭": 3, "🍍": 2, "🍋": 1}
+
+const countDuplicates = (data) => {
+  const output = {};
+
+  // logic here
+  // use map or forEach
+  data.forEach((d) => {
+    output[d] = (output[d] || 0) + 1;
+  });
+
+  return output;
+};
+
+console.log(countDuplicates(fruits));
+```
+
+### 👉 PROBLEM 27:
+
+Reverse words in a string
+
+### 👉 PROBLEM 28:
+
+Sorting words by length in a sentence
