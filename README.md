@@ -174,6 +174,40 @@ console.log(`loop took ${endTime - startTime} milliseconds to finish`);
 
 How can we swap values?
 
+```
+// Swaping values
+let array = [1, 2, 3, 4, 5];
+
+// temp variable
+let temp = array[0];
+array[0] = array[4];
+array[4] = temp;
+
+console.log(array);
+```
+
+array destructuring
+
+```
+// array destructuring
+[array[0], array[4]] = [array[4], array[0]];
+console.log(array);
+```
+
+```
+let a = 1;
+let b = 2;
+[a, b] = [b, a];
+console.log(a, b);
+```
+
+Math
+
+```
+b = a + (a = b) - b;
+console.log(a, b);
+```
+
 ### PROBLEM - 10:
 
 How to copy things from clipboard
