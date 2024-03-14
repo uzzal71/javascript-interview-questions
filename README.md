@@ -655,3 +655,7 @@ async function timer(n) {
 timer(3);
 
 ```
+
+### 👉 PROBLEM 31:
+
+Intersection Observer API in JavaScript
