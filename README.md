@@ -331,3 +331,19 @@ for (let i = 0, j = 3; i <= 3; i++, j--) {
   console.log("a[" + i + "][" + j + "] = " + a[i][j]);
 }
 ```
+
+### PROBLEM - 17:
+
+What will be the output of the below code?
+
+```
+// What will be the output of the below code?
+console.log([] + []); // ""
+
+console.log({} + []); // [object Object]
+
+console.log(true + 1); // 2
+
+console.log(String([])); // ""
+
+```
