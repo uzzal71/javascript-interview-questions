@@ -244,6 +244,20 @@ function handleClick() {
 
 Destructuring aliases
 
+```
+// Destructuring aliases
+
+const language = {
+  name: "JavaScript",
+  founded: 1995,
+  founder: "Brendan Eich",
+};
+
+const { name: languageName, founder: createrName } = language;
+
+console.log(languageName, createrName);
+```
+
 ### PROBLEM - 12:
 
 Get value as data type
