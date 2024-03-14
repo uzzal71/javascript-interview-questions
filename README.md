@@ -360,3 +360,13 @@ function myFunction() {
 const string = myFunction`hello `; // passing function arguments for template literals
 console.log(string); // Bangladesh
 ```
+
+### PROBLEM - 19:
+
+how to make all text contents of a website editable?
+
+```
+document.body.contentEditable = true;
+```
+
+### PROBLEM - 20:
