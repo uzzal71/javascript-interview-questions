@@ -347,3 +347,16 @@ console.log(true + 1); // 2
 console.log(String([])); // ""
 
 ```
+
+### PROBLEM - 18:
+
+What will be the output below code
+
+```
+function myFunction() {
+  return "Bangladesh";
+}
+
+const string = myFunction`hello `; // passing function arguments for template literals
+console.log(string); // Bangladesh
+```
