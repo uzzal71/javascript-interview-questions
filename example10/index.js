@@ -1,5 +1,4 @@
 // Copy to clipboard
-
 function copyToClipboard(str) {
   const element = document.createElement("textarea");
   element.value = str;

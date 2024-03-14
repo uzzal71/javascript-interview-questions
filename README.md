@@ -212,6 +212,34 @@ console.log(a, b);
 
 How to copy things from clipboard
 
+index.html
+
+```
+<h1>javaScript tips</h1>
+<p id="text">Uzzal Kumar Roy</p>
+<p><button id="copy" onclick="handleClick()">Copy</button></p>
+<script src="./index.js"></script>
+```
+
+index.js
+
+```
+// Copy to clipboard
+function copyToClipboard(str) {
+  const element = document.createElement("textarea");
+  element.value = str;
+  document.body.appendChild(element);
+  element.select();
+  document.execCommand("copy");
+  document.body.removeChild(element);
+}
+
+function handleClick() {
+  let text = document.querySelector("#text");
+  copyToClipboard(text.innerText);
+}
+```
+
 ### PROBLEM - 11:
 
 Destructuring aliases
@@ -235,3 +263,7 @@ Shuffling an array
 ### PROBLEM - 16:
 
 Using comma operator
+
+```
+
+```
