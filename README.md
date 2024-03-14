@@ -262,6 +262,23 @@ console.log(languageName, createrName);
 
 Get value as data type
 
+index.html
+
+```
+<h1>JavaScript Tips</h1>
+<input type="number" value="123" id="number" />
+<script src="./index.js"></script>
+```
+
+index.js
+
+```
+// Get value as data type
+const element = document.querySelector("#number").valueAsNumber;
+
+console.log(element);
+```
+
 ### PROBLEM - 13:
 
 Remove duplicate from array
