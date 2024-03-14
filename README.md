@@ -387,3 +387,13 @@ let a = {
 
 a.method(b, 5); // the length is 2
 ```
+
+### PROBLEM - 21:
+
+what will be the output of below code?
+
+```
+const a = "constructor";
+// String constructor arguments pass 01
+console.log(a[a](01)); // "1"
+```
