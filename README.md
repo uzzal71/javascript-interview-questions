@@ -534,6 +534,27 @@ console.log(countDuplicates(fruits));
 
 Reverse words in a string
 
+```
+// reverse words in a string
+
+// input
+const str = "I love Bangladesh";
+
+// output = "I evol hsedalgnaB";
+
+const reverseWords = (data) => {
+  const dataAsArray = data.split(" ");
+
+  const result = dataAsArray.map((d) => {
+    return d.split("").reverse().join("");
+  });
+
+  return result.join(" ");
+};
+
+console.log(reverseWords(str));
+```
+
 ### 👉 PROBLEM 28:
 
 Sorting words by length in a sentence
