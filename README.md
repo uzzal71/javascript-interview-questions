@@ -910,3 +910,7 @@ function listener(event) {
 
 
 ```
+
+### 👉 PROBLEM 34:
+
+JavaScript NaN Explained
