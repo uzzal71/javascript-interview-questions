@@ -700,3 +700,88 @@ scriptingLanguages = Object.groupBy(languages, (lang) => lang.type);
 console.log(scriptingLanguages);
 
 ```
+
+### 👉 PROBLEM 32:
+
+JavaScript Event Delegation
+
+index.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>ইভেন্ট ডেলিগেশন কি?</h1>
+
+      <p>
+        একাধিক এলিমেন্টের জন্য
+        <span class="highlight">একটাই ইভেন্ট লিসেনার রাখা</span> এবং
+        <span class="highlight">নতুন এলিমেন্ট</span> যোগ করলেও যেন লিসেনার কাজ
+        করে।
+      </p>
+
+      <div class="languages">
+        <ul id="list">
+          <li>জাভাস্ক্রিপ্ট</li>
+          <li>পিএইচপি</li>
+          <li>জাভা</li>
+          <li>পাইথন</li>
+          <li>টাইপস্ক্রিপ্ট</li>
+        </ul>
+
+        <div>
+          <button onclick="addElement()">নতুন এলিমেন্ট যোগ করুন</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+```
+
+Style.css
+
+```
+* {
+    font-family: "Anek Bangla", sans-serif;
+}
+
+.container {
+    margin: 50px;
+}
+
+.languages {
+    margin-top: 50px;
+}
+
+.highlight {
+    background-color: aquamarine;
+}
+
+h1 {
+    border-bottom: 1px solid gray;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 10px;
+}
+```
