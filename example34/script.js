@@ -10,4 +10,5 @@ button.addEventListener("click", listener);
 
 function listener(event) {
   console.log(this.tagName);
+  // event.currentTarget or this save
 }
